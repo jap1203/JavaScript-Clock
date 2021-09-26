@@ -1,0 +1,45 @@
+body{
+    background:brown;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.head{
+    text-align: center;
+    font-family: cursive;
+    background: cornflowerblue;
+    border: 1px solid white;
+    line-height: 30px;
+    font-size: 25px;
+}
+
+.main{
+    background: cyan;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer{
+    text-align: right;
+    font-family: cursive;
+    background: cornflowerblue;
+    border: 1px solid white;
+    padding: 6px;
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .head, .main, .footer,canvas {
+      width: 100%;
+    }
+  }
